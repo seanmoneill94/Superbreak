@@ -9,14 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
 
-@interface Ball : NSObject
+@interface Ball : CAShapeLayer
 
 @property int diameter;
 @property UIColor* color;
-@property int x;
-@property int y;
-@property int vel;
+@property float x;
+@property float y;
+@property float vel;
 //0-359
 @property int heading;
 
+-(id)initWithValues:(int)x :(int)y :(int)diameter :(int)vel :(int)heading :(UIColor*)color;
+-(void)draw;
+-(void)move;
+-(float)degToRad:(float)deg;
 @end

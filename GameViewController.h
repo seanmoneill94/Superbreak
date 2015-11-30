@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Ball;
 
 @interface GameViewController : UIViewController
 
+@property IBOutlet UIView* board;
+@property (strong) Ball* ball;
+
+-(void)update:(NSTimer*)timer;
+-(void)moveBall;
 @end

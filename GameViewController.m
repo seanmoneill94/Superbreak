@@ -7,31 +7,32 @@
 //
 
 #import "GameViewController.h"
-
+#import <UIKit/UIKit.h>
+#import "Ball.h"
 @interface GameViewController ()
 
 @end
 
 @implementation GameViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)viewDidLoad {
+     [super viewDidLoad];
+     _ball = [[Ball alloc]initWithValues:25 :25 :20 :2 :0 :[UIColor cyanColor]];
+     [NSTimer scheduledTimerWithTimeInterval:0.0333f target:self selector:@selector(update:) userInfo:nil repeats:YES];
+ 
+ }
+ 
+-(void)update:(NSTimer*)timer  {
+    [self moveBall];
+ }
+ 
+-(void)didReceiveMemoryWarning {
+     [super didReceiveMemoryWarning];
+ }
+
+-(void)moveBall{
+    [_ball removeFromSuperlayer];
+    [_ball draw];
+    [[_board layer] addSublayer:_ball];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
