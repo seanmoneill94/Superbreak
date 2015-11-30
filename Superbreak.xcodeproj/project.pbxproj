@@ -14,6 +14,9 @@
 		DB8840821C0C694300AD38A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8840811C0C694300AD38A4 /* Images.xcassets */; };
 		DB8840851C0C694300AD38A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8840831C0C694300AD38A4 /* LaunchScreen.xib */; };
 		DB8840911C0C694300AD38A4 /* SuperbreakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8840901C0C694300AD38A4 /* SuperbreakTests.m */; };
+		DB9762641C0C702100E29B8A /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9762631C0C702100E29B8A /* Ball.m */; };
+		DB9762671C0C728F00E29B8A /* Brick.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9762661C0C728F00E29B8A /* Brick.m */; };
+		DB97626D1C0C768D00E29B8A /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB97626C1C0C768D00E29B8A /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		DB88408A1C0C694300AD38A4 /* SuperbreakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperbreakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB88408F1C0C694300AD38A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB8840901C0C694300AD38A4 /* SuperbreakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperbreakTests.m; sourceTree = "<group>"; };
+		DB9762621C0C702100E29B8A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		DB9762631C0C702100E29B8A /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		DB9762651C0C728F00E29B8A /* Brick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brick.h; sourceTree = "<group>"; };
+		DB9762661C0C728F00E29B8A /* Brick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brick.m; sourceTree = "<group>"; };
+		DB97626B1C0C768D00E29B8A /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		DB97626C1C0C768D00E29B8A /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ../GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +94,16 @@
 				DB8840791C0C694300AD38A4 /* AppDelegate.m */,
 				DB88407B1C0C694300AD38A4 /* ViewController.h */,
 				DB88407C1C0C694300AD38A4 /* ViewController.m */,
+				DB97626B1C0C768D00E29B8A /* GameViewController.h */,
+				DB97626C1C0C768D00E29B8A /* GameViewController.m */,
 				DB88407E1C0C694300AD38A4 /* Main.storyboard */,
 				DB8840811C0C694300AD38A4 /* Images.xcassets */,
 				DB8840831C0C694300AD38A4 /* LaunchScreen.xib */,
 				DB8840741C0C694300AD38A4 /* Supporting Files */,
+				DB9762621C0C702100E29B8A /* Ball.h */,
+				DB9762631C0C702100E29B8A /* Ball.m */,
+				DB9762651C0C728F00E29B8A /* Brick.h */,
+				DB9762661C0C728F00E29B8A /* Brick.m */,
 			);
 			path = Superbreak;
 			sourceTree = "<group>";
@@ -219,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9762641C0C702100E29B8A /* Ball.m in Sources */,
 				DB88407D1C0C694300AD38A4 /* ViewController.m in Sources */,
+				DB9762671C0C728F00E29B8A /* Brick.m in Sources */,
 				DB88407A1C0C694300AD38A4 /* AppDelegate.m in Sources */,
+				DB97626D1C0C768D00E29B8A /* GameViewController.m in Sources */,
 				DB8840771C0C694300AD38A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +434,7 @@
 				DB8840961C0C694300AD38A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB8840971C0C694300AD38A4 /* Build configuration list for PBXNativeTarget "SuperbreakTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				DB8840991C0C694300AD38A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
