@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14DEA1601C396CDB00D3B253 /* Paddle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DEA15F1C396CDB00D3B253 /* Paddle.m */; };
 		DB8840771C0C694300AD38A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8840761C0C694300AD38A4 /* main.m */; };
 		DB88407A1C0C694300AD38A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8840791C0C694300AD38A4 /* AppDelegate.m */; };
 		DB88407D1C0C694300AD38A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88407C1C0C694300AD38A4 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14DEA15E1C396CDB00D3B253 /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
+		14DEA15F1C396CDB00D3B253 /* Paddle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paddle.m; sourceTree = "<group>"; };
 		DB8840711C0C694300AD38A4 /* Superbreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superbreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8840751C0C694300AD38A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB8840761C0C694300AD38A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				DB97626B1C0C768D00E29B8A /* GameViewController.h */,
 				DB97626C1C0C768D00E29B8A /* GameViewController.m */,
 				DB88407E1C0C694300AD38A4 /* Main.storyboard */,
+				14DEA15E1C396CDB00D3B253 /* Paddle.h */,
+				14DEA15F1C396CDB00D3B253 /* Paddle.m */,
 				DB8840811C0C694300AD38A4 /* Images.xcassets */,
 				DB8840831C0C694300AD38A4 /* LaunchScreen.xib */,
 				DB8840741C0C694300AD38A4 /* Supporting Files */,
@@ -178,7 +183,7 @@
 		DB8840691C0C694300AD38A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = acb12jh;
 				TargetAttributes = {
 					DB8840701C0C694300AD38A4 = {
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DEA1601C396CDB00D3B253 /* Paddle.m in Sources */,
 				DB9762641C0C702100E29B8A /* Ball.m in Sources */,
 				DB88407D1C0C694300AD38A4 /* ViewController.m in Sources */,
 				DB9762671C0C728F00E29B8A /* Brick.m in Sources */,
@@ -302,6 +308,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Superbreak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheffield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -377,6 +385,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Superbreak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheffield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -395,6 +404,7 @@
 				);
 				INFOPLIST_FILE = SuperbreakTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheffield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Superbreak.app/Superbreak";
 			};
@@ -410,6 +420,7 @@
 				);
 				INFOPLIST_FILE = SuperbreakTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheffield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Superbreak.app/Superbreak";
 			};

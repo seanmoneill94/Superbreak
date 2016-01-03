@@ -7,14 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface Brick : NSObject
+@interface Brick : CAShapeLayer
 
 @property UIColor* color;
 @property int x;
 @property int y;
+@property int width;
+@property int height;
 @property int score;
-@property bool visible;
+@property Boolean visible;
+
+-(id)initWithValues:(float)x :(float)y :(int)width :(int)height :(Boolean)visible :(UIColor*)color;
+-(void)draw;
 
 @end

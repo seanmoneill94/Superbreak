@@ -11,11 +11,13 @@
 
 @implementation Ball
 
--(id)initWithValues:(int)x :(int)y :(int)diameter :(int)vel :(int)heading :(UIColor*)color {
+-(id)initWithValues:(float)x :(float)y :(int)diameter :(int)vel :(int)heading :(UIColor*)color {
     self = [super init];
     if(self){
         _x = x;
         _y = y;
+        _dx = -2;
+        _dy = -2;
         _diameter = diameter;
         _vel = vel;
         _heading = heading;
@@ -33,8 +35,10 @@
 }
 
 -(void)move {
-    _x += _vel * sin([self degToRad:_heading]);
-    _y += _vel * -cos([self degToRad:_heading]);
+    _x += _dx;
+    _y += _dy;
+    //_x += _vel * sin([self degToRad:_heading]);
+    //_y += _vel * -cos([self degToRad:_heading]);
 }
 
 -(float)degToRad:(float)deg {
